@@ -1,5 +1,5 @@
 Gem::Specification.new do |spec|
-  spec.add_dependency 'delayed_job', ['>= 3.0', '< 5.1']
+  spec.add_dependency 'delayed_job_active_record', ['~> 4.1', '>= 4.1.1']
   spec.authors        =  ['Sriram Kumar']
   spec.description    =  'Rails based scheduler which works with Delayed Job gem.'
   spec.email          =  ['ksrirambecse@gmail.com']
@@ -11,5 +11,5 @@ Gem::Specification.new do |spec|
   spec.require_paths  =  ['lib']
   spec.summary        =  'Database-backed scheduler system -- Inspired from Clockwork'
   # spec.test_files     =  Dir.glob('spec/**/*')
-  spec.version        =  '0.0.0'
+  spec.version        =  '0.0.1'
 end
