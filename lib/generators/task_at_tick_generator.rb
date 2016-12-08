@@ -11,6 +11,7 @@ class TaskAtTickGenerator < Rails::Generators::Base
   source_paths << File.join(File.dirname(__FILE__), 'templates')
 
   def create_migration_file
+    puts self.behavior
     if self.class.migration_exists?('db/migrate', 'create_tasks')
       say_status('skipped', 'Migration CreateTasks already exists')
     else
